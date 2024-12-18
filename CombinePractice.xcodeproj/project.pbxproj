@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8032F1FD2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032F1FC2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift */; };
 		806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */; };
 		806E845C2D002C1D00FC83C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E845B2D002C1D00FC83C8 /* ContentView.swift */; };
 		806E845E2D002C1E00FC83C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E845D2D002C1E00FC83C8 /* Assets.xcassets */; };
 		806E84612D002C1E00FC83C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */; };
+		806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E84682D002C4200FC83C8 /* FirstPipeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8032F1FC2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCancellablePipelineView.swift; sourceTree = "<group>"; };
 		806E84562D002C1D00FC83C8 /* CombinePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePracticeApp.swift; sourceTree = "<group>"; };
 		806E845B2D002C1D00FC83C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		806E845D2D002C1E00FC83C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		806E84682D002C4200FC83C8 /* FirstPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPipeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8032F1FB2D129F6600E1C3D8 /* Lesson2 */ = {
+			isa = PBXGroup;
+			children = (
+				8032F1FC2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift */,
+			);
+			path = Lesson2;
+			sourceTree = "<group>";
+		};
 		806E844D2D002C1D00FC83C8 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +63,10 @@
 		806E84582D002C1D00FC83C8 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				8032F1FB2D129F6600E1C3D8 /* Lesson2 */,
 				806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */,
 				806E845B2D002C1D00FC83C8 /* ContentView.swift */,
+				806E84672D002C2B00FC83C8 /* Lesson1 */,
 				806E845D2D002C1E00FC83C8 /* Assets.xcassets */,
 				806E845F2D002C1E00FC83C8 /* Preview Content */,
 			);
@@ -65,6 +79,14 @@
 				806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		806E84672D002C2B00FC83C8 /* Lesson1 */ = {
+			isa = PBXGroup;
+			children = (
+				806E84682D002C4200FC83C8 /* FirstPipeline.swift */,
+			);
+			path = Lesson1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8032F1FD2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift in Sources */,
 				806E845C2D002C1D00FC83C8 /* ContentView.swift in Sources */,
 				806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */,
+				806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
