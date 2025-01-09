@@ -13,6 +13,7 @@
 		806E845E2D002C1E00FC83C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E845D2D002C1E00FC83C8 /* Assets.xcassets */; };
 		806E84612D002C1E00FC83C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */; };
 		806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E84682D002C4200FC83C8 /* FirstPipeline.swift */; };
+		80E839DD2D2FE19D000FF001 /* CancellingMultiplePipelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		806E845D2D002C1E00FC83C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		806E84682D002C4200FC83C8 /* FirstPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPipeline.swift; sourceTree = "<group>"; };
+		80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingMultiplePipelinesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		806E84582D002C1D00FC83C8 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				80E839DB2D2FE176000FF001 /* Lesson 3 */,
 				8032F1FB2D129F6600E1C3D8 /* Lesson2 */,
 				806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */,
 				806E845B2D002C1D00FC83C8 /* ContentView.swift */,
@@ -87,6 +90,14 @@
 				806E84682D002C4200FC83C8 /* FirstPipeline.swift */,
 			);
 			path = Lesson1;
+			sourceTree = "<group>";
+		};
+		80E839DB2D2FE176000FF001 /* Lesson 3 */ = {
+			isa = PBXGroup;
+			children = (
+				80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */,
+			);
+			path = "Lesson 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8032F1FD2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift in Sources */,
+				80E839DD2D2FE19D000FF001 /* CancellingMultiplePipelinesView.swift in Sources */,
 				806E845C2D002C1D00FC83C8 /* ContentView.swift in Sources */,
 				806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */,
 				806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */,
