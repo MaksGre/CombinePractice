@@ -18,17 +18,17 @@ struct CurrentValueSubjectView: View {
     
     var body: some View {
         VStack {
-            Text("\(viewModel.selectionSame ? "Два раза выбрали значение" : "") \(viewModel.selection)")
-                .foregroundColor(viewModel.selectionSame ? .red : .green)
+            Text("\(viewModel.selectionSame.value ? "Два раза выбрали значение" : "") \(viewModel.selection.value)")
+                .foregroundColor(viewModel.selectionSame.value ? .red : .green)
                 .padding()
             
             Button("Выбрать колу") {
-                viewModel.selection = "Кола"
+                viewModel.selection.value = "Кола" // можно так присвоить
             }
             .padding()
 
             Button("Выбрать бургер") {
-                viewModel.selection = "Бургер"
+                viewModel.selection.send("Бургер") // а можно через send
             }
             .padding()
         }
@@ -36,18 +36,19 @@ struct CurrentValueSubjectView: View {
 }
 
 class CurrentValueSubjectViewModel: ObservableObject {
-    @Published var selection = "Корзина пуста"
-    @Published var selectionSame = false
+    var selection = CurrentValueSubject<String, Never>("Корзина пуста")
+    var selectionSame = CurrentValueSubject<Bool, Never>(false)
     
     var cancellable: Set<AnyCancellable> = []
     
     init() {
-        $selection
+        selection
             .map { [unowned self] newValue -> Bool in
-                newValue == selection
+                newValue == selection.value
             }
             .sink { [unowned self] value in
-                selectionSame = value
+                selectionSame.value = value
+                objectWillChange.send()
             }
             .store(in: &cancellable)
     }
