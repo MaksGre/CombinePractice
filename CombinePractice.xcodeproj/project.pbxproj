@@ -16,6 +16,7 @@
 		80E839DD2D2FE19D000FF001 /* CancellingMultiplePipelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */; };
 		80F0CF852D351F3F00F58909 /* CurrentValueSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0CF842D351F2D00F58909 /* CurrentValueSubjectView.swift */; };
 		80F0CF882D352D3B00F58909 /* EmptyFailurePublishersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0CF872D352D3800F58909 /* EmptyFailurePublishersView.swift */; };
+		80F0CF8B2D35362300F58909 /* FailPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0CF8A2D35360E00F58909 /* FailPublisherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingMultiplePipelinesView.swift; sourceTree = "<group>"; };
 		80F0CF842D351F2D00F58909 /* CurrentValueSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectView.swift; sourceTree = "<group>"; };
 		80F0CF872D352D3800F58909 /* EmptyFailurePublishersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFailurePublishersView.swift; sourceTree = "<group>"; };
+		80F0CF8A2D35360E00F58909 /* FailPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailPublisherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		806E84582D002C1D00FC83C8 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				80F0CF892D35360200F58909 /* Lesson 6 */,
 				80F0CF862D352D2400F58909 /* Lesson 5 */,
 				80F0CF832D351F2400F58909 /* Lesson 4 */,
 				80E839DB2D2FE176000FF001 /* Lesson 3 */,
@@ -120,6 +123,14 @@
 				80F0CF872D352D3800F58909 /* EmptyFailurePublishersView.swift */,
 			);
 			path = "Lesson 5";
+			sourceTree = "<group>";
+		};
+		80F0CF892D35360200F58909 /* Lesson 6 */ = {
+			isa = PBXGroup;
+			children = (
+				80F0CF8A2D35360E00F58909 /* FailPublisherView.swift */,
+			);
+			path = "Lesson 6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				806E845C2D002C1D00FC83C8 /* ContentView.swift in Sources */,
 				806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */,
 				806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */,
+				80F0CF8B2D35362300F58909 /* FailPublisherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
