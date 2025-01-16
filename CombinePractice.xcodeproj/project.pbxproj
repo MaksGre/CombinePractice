@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8032F1FD2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032F1FC2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift */; };
+		8033D19F2D393282009B0346 /* JustSequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8033D19E2D393275009B0346 /* JustSequenceView.swift */; };
 		806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */; };
 		806E845C2D002C1D00FC83C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E845B2D002C1D00FC83C8 /* ContentView.swift */; };
 		806E845E2D002C1E00FC83C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E845D2D002C1E00FC83C8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		8032F1FC2D129F8A00E1C3D8 /* FirstCancellablePipelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCancellablePipelineView.swift; sourceTree = "<group>"; };
+		8033D19E2D393275009B0346 /* JustSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustSequenceView.swift; sourceTree = "<group>"; };
 		806E84562D002C1D00FC83C8 /* CombinePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806E84592D002C1D00FC83C8 /* CombinePracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePracticeApp.swift; sourceTree = "<group>"; };
 		806E845B2D002C1D00FC83C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			path = Lesson2;
 			sourceTree = "<group>";
 		};
+		8033D19D2D393269009B0346 /* Lesson 8 */ = {
+			isa = PBXGroup;
+			children = (
+				8033D19E2D393275009B0346 /* JustSequenceView.swift */,
+			);
+			path = "Lesson 8";
+			sourceTree = "<group>";
+		};
 		806E844D2D002C1D00FC83C8 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		806E84582D002C1D00FC83C8 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				8033D19D2D393269009B0346 /* Lesson 8 */,
 				80A9BE5C2D364A74005B96C8 /* Lesson 7 */,
 				80F0CF892D35360200F58909 /* Lesson 6 */,
 				80F0CF862D352D2400F58909 /* Lesson 5 */,
@@ -223,6 +234,7 @@
 				806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */,
 				806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */,
 				80F0CF8B2D35362300F58909 /* FailPublisherView.swift in Sources */,
+				8033D19F2D393282009B0346 /* JustSequenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
