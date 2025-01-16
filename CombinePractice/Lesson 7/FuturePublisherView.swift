@@ -16,10 +16,8 @@ struct FuturePublisherView: View {
             Text(viewModel.firstResult)
             
             Button("Запуск") {
-                viewModel.runAgain()
+                viewModel.fetch ()
             }
-            
-            Text(viewModel.secondResult)
         }
         .font(.title)
         .onAppear {
@@ -30,43 +28,35 @@ struct FuturePublisherView: View {
 
 class FuturePublisherViewModel: ObservableObject {
     @Published var firstResult = ""
-    @Published var secondResult = ""
     
-    let futurePublisher = Deferred {
-        Future<String, Never> { promise in
-            promise(.success("Future Publisher сработал"))
-            print("Future Publisher сработал")
-        }
-    }
-    
-    func createFetch(url: URL, completion: @escaping (Result<String, Error>) -> ()) {
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error {
-                completion(.failure(error))
-                return
+    var cancellable: AnyCancellable?
+     
+    func createFetch(url: URL) -> AnyPublisher<String?, Error> {
+        Future { promise in
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                if let error {
+                    promise(.failure(error))
+                    return
+                }
+                
+                promise(.success(response?.url?.absoluteString ?? ""))
             }
             
-            completion(.success(response?.url?.absoluteString ?? ""))
+            task.resume()
         }
-        
-        task.resume()
+        .eraseToAnyPublisher()
     }
     
     func fetch() {
-        guard let url = URL(string: "") else { return }
-        createFetch(url: url) { result in
-            switch result {
-            case .success(let obj):
-                print(obj)
-            case .failure(let error):
-                print(error)
+        guard let url = URL(string: "https://google.com") else { return }
+        
+        cancellable = createFetch(url: url)
+            .receive(on: RunLoop.main)
+            .sink { completion in
+                print(completion)
+            } receiveValue: { [unowned self] value in
+                firstResult = value ?? ""
             }
-        }
-    }
-    
-    func runAgain() {
-        futurePublisher
-            .assign(to: &$secondResult)
     }
 }
 
