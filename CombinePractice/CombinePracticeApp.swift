@@ -17,7 +17,8 @@ struct CombinePracticeApp: App {
 //            CancellingMultiplePipelinesView() // Lesson 3
 //            CurrentValueSubjectView() // Lesson 4
 //            EmptyPublishersView() // Lesson 5
-            FailPublisherView() // Lesson 6
+//            FailPublisherView() // Lesson 6
+            FuturePublisherView() // Lesson 7
         }
     }
 }
