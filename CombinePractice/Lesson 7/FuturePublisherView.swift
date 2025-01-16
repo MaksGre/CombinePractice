@@ -39,9 +39,29 @@ class FuturePublisherViewModel: ObservableObject {
         }
     }
     
+    func createFetch(url: URL, completion: @escaping (Result<String, Error>) -> ()) {
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error {
+                completion(.failure(error))
+                return
+            }
+            
+            completion(.success(response?.url?.absoluteString ?? ""))
+        }
+        
+        task.resume()
+    }
+    
     func fetch() {
-        futurePublisher
-            .assign(to: &$firstResult)
+        guard let url = URL(string: "") else { return }
+        createFetch(url: url) { result in
+            switch result {
+            case .success(let obj):
+                print(obj)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func runAgain() {
