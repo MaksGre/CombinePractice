@@ -15,6 +15,7 @@
 		806E84612D002C1E00FC83C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */; };
 		806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E84682D002C4200FC83C8 /* FirstPipeline.swift */; };
 		807A430F2D39F9F000FB3BB5 /* PassthroughSubjectTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807A430E2D39F9DB00FB3BB5 /* PassthroughSubjectTimerView.swift */; };
+		807A43122D3A021700FB3BB5 /* URLSessionDataTaskPublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807A43112D3A01FA00FB3BB5 /* URLSessionDataTaskPublisherView.swift */; };
 		80A9BE5E2D364A99005B96C8 /* FuturePublisherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BE5D2D364A7D005B96C8 /* FuturePublisherView.swift */; };
 		80E839DD2D2FE19D000FF001 /* CancellingMultiplePipelinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */; };
 		80F0CF852D351F3F00F58909 /* CurrentValueSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0CF842D351F2D00F58909 /* CurrentValueSubjectView.swift */; };
@@ -32,6 +33,7 @@
 		806E84602D002C1E00FC83C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		806E84682D002C4200FC83C8 /* FirstPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPipeline.swift; sourceTree = "<group>"; };
 		807A430E2D39F9DB00FB3BB5 /* PassthroughSubjectTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughSubjectTimerView.swift; sourceTree = "<group>"; };
+		807A43112D3A01FA00FB3BB5 /* URLSessionDataTaskPublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskPublisherView.swift; sourceTree = "<group>"; };
 		80A9BE5D2D364A7D005B96C8 /* FuturePublisherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturePublisherView.swift; sourceTree = "<group>"; };
 		80E839DC2D2FE198000FF001 /* CancellingMultiplePipelinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingMultiplePipelinesView.swift; sourceTree = "<group>"; };
 		80F0CF842D351F2D00F58909 /* CurrentValueSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		806E84582D002C1D00FC83C8 /* CombinePractice */ = {
 			isa = PBXGroup;
 			children = (
+				807A43102D3A01F000FB3BB5 /* Lesson 10 */,
 				807A430D2D39F9D200FB3BB5 /* Lesson 9 */,
 				8033D19D2D393269009B0346 /* Lesson 8 */,
 				80A9BE5C2D364A74005B96C8 /* Lesson 7 */,
@@ -124,6 +127,14 @@
 				807A430E2D39F9DB00FB3BB5 /* PassthroughSubjectTimerView.swift */,
 			);
 			path = "Lesson 9";
+			sourceTree = "<group>";
+		};
+		807A43102D3A01F000FB3BB5 /* Lesson 10 */ = {
+			isa = PBXGroup;
+			children = (
+				807A43112D3A01FA00FB3BB5 /* URLSessionDataTaskPublisherView.swift */,
+			);
+			path = "Lesson 10";
 			sourceTree = "<group>";
 		};
 		80A9BE5C2D364A74005B96C8 /* Lesson 7 */ = {
@@ -245,6 +256,7 @@
 				806E845A2D002C1D00FC83C8 /* CombinePracticeApp.swift in Sources */,
 				806E84692D002C4200FC83C8 /* FirstPipeline.swift in Sources */,
 				807A430F2D39F9F000FB3BB5 /* PassthroughSubjectTimerView.swift in Sources */,
+				807A43122D3A021700FB3BB5 /* URLSessionDataTaskPublisherView.swift in Sources */,
 				80F0CF8B2D35362300F58909 /* FailPublisherView.swift in Sources */,
 				8033D19F2D393282009B0346 /* JustSequenceView.swift in Sources */,
 			);

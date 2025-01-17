@@ -20,7 +20,8 @@ struct CombinePracticeApp: App {
 //            FailPublisherView() // Lesson 6
 //            FuturePublisherView() // Lesson 7
 //            JustSequenceView() // Lesson 8
-            PassthroughSubjectTimerView() // Lesson 9
+//            PassthroughSubjectTimerView() // Lesson 9
+            URLSessionDataTaskPublisherView() // Lesson 10
         }
     }
 }
